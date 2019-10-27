@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Rationale&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home {
+    height: 100vh;
+    background:linear-gradient(90deg, rgba(224,193,202,1) 0%, rgba(199,83,97,1) 100%);
+    text-align: center;
+}
+
+#logo {
+    height: min-content;
+    padding: 1rem 1rem;
+    margin: 2rem 2rem;
+    font-family: 'Rationale';
+    background-color: white;
+}
+
+#header ul {
+    list-style: none;
+}
+
+#header  ul li {
+    display: inline-block;
+    font-family: 'Rationale';
+    font-size: 2rem;
+    padding: 0 2rem;
+    line-height: 8rem;
+}
+
+.aba-selected {
+    background: white;
+    transition: 0.5s ease-in-out;
+}
+
+#header ul li:hover {
+    background: white;
+    transition: 0.5s ease-in-out;
+}
+
+#titulo-site {
+    text-align: center;
+    font-family: 'Rationale';
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+#galeria {
+    width: 100vw;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#galeria ul {
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+#galeria-container {
+    width: 52em;
+    height: 28em;
+    box-shadow: 3px 3px 2px 0px black;
+}
+
+#galeria-container li img {
+    width: 52em;
+    height: 28em;
+}
+
+.seta {
+    margin: auto 0;
+    height: min-content;
+    font-size: 5rem;
+    background: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.seta:hover {
+    cursor: pointer;
+}
+
+.this-here {
+    font-family: 'Rationale';
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    background: white;
+    color: black;
+    box-shadow: 3px 3px 2px 0px black;
+}
+
+.cardprojeto {
+    background: white;
+    font-family: 'Rationale';
+    width: 20rem;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    box-sizing: border-box;
+}
+
+.cardprojeto a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.cardprojeto p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.anim1 {
+    animation: animA 0.5s 1;
+}
+
+.anim2 {
+    animation: animB 0.5s 1;
+}
+
+.anim3 {
+    animation: animC 0.5s 1;
+}
+
+
+@keyframes animA {
+    35% {
+        transform: skewX(2deg);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        background-color: #14C79C;
+    }
+
+    70% {
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes animB {
+    35% {
+        transform: skewX(2deg);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        background: #683EE2;
+    }
+
+    70% {
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes animC {
+    35% {
+        transform: skewX(2deg);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        background-color: #E14774;
+    }
+
+    70% {
+        animation-timing-function: ease-in-out;
+    }
+}
