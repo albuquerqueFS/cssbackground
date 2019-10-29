@@ -28,30 +28,41 @@ body {
 #header {
     top: 0;
     width: 99vw;
-    position: absolute;
+    position: fixed;
     height: 7rem;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transition: 0.5s;
 }
 
 #logo {
     height: min-content;
+    font-size: 2rem;
     padding: 1rem 1rem;
     margin: 1rem 1rem;
     font-family: 'Rationale';
     background-color: white;
+    transition: 0.5s;
 }
 
 #header ul {
     list-style: none;
+    float: right;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header ul li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-family: 'Montserrat';
     font-size: 1.2rem;
     padding: 0 2rem;
-    line-height: 7rem;
+    height: 100%;
 }
 
 #header ul li:hover {
@@ -66,10 +77,11 @@ body {
 }
 
 #inicio-flex {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #inicio-texto {
@@ -104,6 +116,7 @@ body {
 
 #sobre-flex {
     width: 100%;
+    display: flex;
 }
 
 #sobre-branco {
@@ -152,6 +165,18 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+#sobre-label {
+    width: 50vw;    
+}
+
+#label__img-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: end;
+}
+
 .projeto-card {
     background: #fff;
     display: inline-block;
@@ -163,10 +188,10 @@ body {
 
 .card__titulo {
     font-family: 'Montserrat';
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: 600;
-    color: #313131;
+    color: #5c5c5c;
     text-align: left;
     padding: 1rem 2rem;
 }
@@ -176,4 +201,56 @@ body {
     color: #575757;
     text-align: left;
     padding: 2rem 2rem;
+}
+
+#contato {  
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contato-titulo {
+    font-family: 'Helvetica';
+    font-size: 4rem;
+    padding-top: 35vh;
+}
+
+#contato-container {
+    width: 50vw;
+    margin: 0rem 3rem;
+}
+
+#contato-tituloB {
+    font-family: 'Helvetica';
+    font-size: 3.5rem;
+    margin-top: 5rem;
+}
+
+#contato-redes {
+    margin: 1rem 1rem;
+    height: 3rem;
+}
+
+#contato-redes li {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+#contato-redes li img {
+    height: 2rem;
+    margin-right: 10px;
+}
+
+#contato-redes li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+#contato-redes li a:hover {
+    color: rgb(0, 79, 153);
 }
