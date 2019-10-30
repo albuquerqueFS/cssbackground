@@ -6,6 +6,8 @@ const logo = document.getElementById('logo');
 const firstScreen = window.innerHeight;
 const secondScreen = window.innerHeight + document.getElementById('sobre-flex').height;
 
+const contato = document.getElementById('contato');
+
 window.onscroll = () => {
 
     if (window.pageYOffset > 160) {
@@ -30,14 +32,20 @@ window.onscroll = () => {
         headerUlList[0].classList.remove('aba-selected');
         headerUlList[1].className = 'aba-selected';
         headerUlList[2].classList.remove('aba-selected');
+
+        contato.style.backgroundColor = 'none';
     } else if (window.pageYOffset > (firstScreen + firstScreen)) {
         headerUlList[1].classList.remove('aba-selected');
         headerUlList[0].classList.remove('aba-selected');
         headerUlList[2].className = 'aba-selected';
+        contato.style.backgroundColor = 'white';
+
     } else {
         headerUlList[1].classList.remove('aba-selected');
         headerUlList[0].className = 'aba-selected';
         headerUlList[2].classList.remove('aba-selected');
+
+        contato.style.backgroundColor = 'none';
     }
 
 

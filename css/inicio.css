@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    height: 100vh;
     /* background: linear-gradient(90deg, rgba(217,125,125,1) 0%, rgba(237,193,155,1) 100%); */
     background: rgb(133,125,217);
     background: linear-gradient(90deg, rgba(133,125,217,1) 0%, rgba(155,217,237,1) 100%); 
@@ -102,16 +103,12 @@ body {
 }
 
 #img-container {
-    width: 55vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-}
-
-#img-container img {
-    margin-right: 1rem;
 }
 
 #sobre-flex {
@@ -121,7 +118,7 @@ body {
 
 #sobre-branco {
     background: white;
-    width: 50vw;
+    width: 100%;
     margin-left: 2rem;
     padding: 2rem 0rem;
     text-align: center;
@@ -166,14 +163,14 @@ body {
 }
 
 #sobre-label {
-    width: 50vw;    
+    width: 100%;    
+    height: 100%;
 }
 
 #label__img-container {
-    height: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: end;
 }
 
@@ -183,7 +180,7 @@ body {
     width: 95%;
     margin-left: 2.5%;
     margin-top: 2rem;
-    box-shadow: 0px 0px 10px 1px rgba(133,125,217,1);
+    box-shadow: 0px 0px 10px 1px rgb(168, 168, 168);
 }
 
 .card__titulo {
@@ -204,9 +201,10 @@ body {
 }
 
 #contato {  
-    background-color: white;
+    /* background-color: red; */
     width: 100vw;
     height: 100vh;
+    transition: 2s;
 }
 
 #contato-titulo {
@@ -253,4 +251,35 @@ body {
 
 #contato-redes li a:hover {
     color: rgb(0, 79, 153);
+}
+    
+@media only screen and (min-width: 480px) {
+     
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    #inicio-img {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 12px;
+    }
+    
+    #inicio-img {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1382px) {
+    html { 
+        font-size: 16px;
+    }
 }
