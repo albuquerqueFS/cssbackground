@@ -172,11 +172,13 @@ body {
 }
 
 #label__img-container {
-    height: 100vh;
-    width: 100%;
+    margin-top: 20rem;
+    height: auto;
+    width: auto;
     display: flex;
-    align-items: center;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #sobre-label img {
