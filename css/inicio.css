@@ -15,7 +15,9 @@ body {
     height: 100vh;
     /* background: linear-gradient(90deg, rgba(217,125,125,1) 0%, rgba(237,193,155,1) 100%); */
     background: rgb(133,125,217);
-    background: linear-gradient(90deg, rgba(133,125,217,1) 0%, rgba(155,217,237,1) 100%); 
+    background: linear-gradient(45deg, rgba(126, 98, 151, 0.884) 0%, #AFD1D9 100%); 
+    /* background: rgb(133,125,217);
+    background: linear-gradient(90deg, #7a8b99 0%, #a9ddd6 100%); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,6 +188,7 @@ body {
 }
 
 .projeto-card {
+    /* color: rgb(0, 99, 112); */
     background: #fff;
     display: inline-block;
     width: 95%;
@@ -211,28 +214,57 @@ body {
     padding: 2rem 2rem;
 }
 
-#contato {  
-    /* background-color: red; */
+#foda {
     width: 100vw;
+    overflow-x: unset;
+    overflow-y: hidden;
+}
+
+#contato {  
+    width: 200vw;
     height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
     transition: 1s;
+}
+
+#contato-container {
+    width: 100vw;
+    margin: 0rem 3rem;
 }
 
 #contato-titulo {
     font-family: 'Helvetica';
     font-size: 4rem;
-    padding-top: 35vh;
-}
-
-#contato-container {
-    width: 50vw;
-    margin: 0rem 3rem;
+    padding: 1rem 1rem;
+    padding-top: 30vh;
 }
 
 #contato-tituloB {
     font-family: 'Helvetica';
     font-size: 3.5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    padding: 1rem 1rem;
+}
+
+#contato-link {
+    font-family: 'Helvetica';
+    font-size: 3.5rem;
+    margin-top: 2rem;
+}
+
+#contato-link a {
+    text-decoration: none;
+    color: yellowgreen;
+    background-color: black;
+    box-shadow: 10px 10px 0px 0px grey;
+    padding: 1rem 1rem;
+    transition: 0.5s;
+}
+
+#contato-link a:hover {
+    color: white;
+    box-shadow: 5px 5px 0px 0px grey;
 }
 
 #contato-redes {

@@ -28,26 +28,25 @@ window.onscroll = () => {
         headerUlLi.style.fontSize = '1.2rem';
     }
 
-    if (window.pageYOffset > (firstScreen - 50) && window.pageYOffset < (firstScreen + firstScreen)) {
+    if (window.pageYOffset < firstScreen) {
+        headerUlList[0].className = 'aba-selected';
+        headerUlList[1].classList.remove('aba-selected');
+        headerUlList[2].classList.remove('aba-selected');
+
+    } else if (window.pageYOffset > $('#sobre-flex').offset().top &&
+        window.pageYOffset < $('#foda').offset().top - 20) {
+
         headerUlList[0].classList.remove('aba-selected');
         headerUlList[1].className = 'aba-selected';
         headerUlList[2].classList.remove('aba-selected');
 
-        contato.style.backgroundColor = 'none';
-    } else if (window.pageYOffset > (firstScreen + firstScreen)) {
+    } else if (window.pageYOffset > $('#foda').offset().top - 20) {
+
         headerUlList[1].classList.remove('aba-selected');
         headerUlList[0].classList.remove('aba-selected');
         headerUlList[2].className = 'aba-selected';
         contato.style.backgroundColor = 'white';
 
-    } else {
-        headerUlList[1].classList.remove('aba-selected');
-        headerUlList[0].className = 'aba-selected';
-        headerUlList[2].classList.remove('aba-selected');
-
-        contato.style.backgroundColor = 'none';
     }
-
-
 
 }
