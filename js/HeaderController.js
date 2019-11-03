@@ -6,7 +6,10 @@ const logo = document.getElementById('logo');
 const firstScreen = window.innerHeight;
 const secondScreen = window.innerHeight + document.getElementById('sobre-flex').height;
 
-const contato = document.getElementById('contato');
+const contato = document.getElementById('foda');
+const foda = document.getElementById('foda');
+
+const contatocontainer = document.getElementById('contato-containerB');
 
 window.onscroll = () => {
 
@@ -47,6 +50,14 @@ window.onscroll = () => {
         headerUlList[2].className = 'aba-selected';
         contato.style.backgroundColor = 'white';
 
+        $('#orcament-see').click(() => {
+            // contato.scrollLeft = contatocontainer.offsetLeft
+            contato.scrollTo({
+                top: 0,
+                left: 9000,
+                behavior: 'smooth'
+            })
+        })
     }
 
 }

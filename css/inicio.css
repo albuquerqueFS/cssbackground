@@ -53,6 +53,7 @@ body {
 #header ul {
     list-style: none;
     float: right;
+    margin-right: 1rem;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -233,6 +234,11 @@ body {
     margin: 0rem 3rem;
 }
 
+#contato-containerB {
+    width: 100vw;
+    margin: 0rem 3rem;
+}
+
 #contato-titulo {
     font-family: 'Helvetica';
     font-size: 4rem;
@@ -242,15 +248,49 @@ body {
 
 #contato-tituloB {
     font-family: 'Helvetica';
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-top: 3rem;
     padding: 1rem 1rem;
 }
 
 #contato-link {
-    font-family: 'Helvetica';
+    font-family: 'Montserrat';
     font-size: 3.5rem;
     margin-top: 2rem;
+}
+
+#contato-separador {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#separador-redes {
+    width: 50vw;
+}
+
+#separador-button {
+    width: 50vw;
+    background: rebeccapurple;
+}
+
+
+#separadorA {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
+#separadorA button {
+    background-color: rgb(0, 79, 153);
+    color: white;
+    margin-top: 3rem;
+    border-radius: 10px;
+    border: 0px;
+    padding: 2rem 2rem;
+    font-family: 'Helvetica';
+    font-size: 2rem;
 }
 
 #contato-link a {
