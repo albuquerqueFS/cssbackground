@@ -80,17 +80,17 @@ window.onscroll = () => {
         })
     }
 
-    if ($('#minhas-redes').css('display', 'block')) {
-        if (window.pageYOffset > $('#minhas-redes').offset().top - 20) {
-            header.style.color = 'white';
-            header.style.background = 'none'
+    // if ($('#minhas-redes').css('display', 'block')) {
+    //     if (window.pageYOffset > $('#minhas-redes').offset().top - 20) {
+    //         header.style.color = 'white';
+    //         header.style.background = 'none'
 
-            logo.style.color = 'black';
-            headerUlList[2].style.color = 'black';
-        } else {
-            header.style.color = 'black';
-            logo.style.color = 'black'
-            headerUlList[2].style.color = 'black';
-        }
-    }
+    //         logo.style.color = 'black';
+    //         headerUlList[2].style.color = 'black';
+    //     } else {
+    //         header.style.color = 'black';
+    //         logo.style.color = 'black'
+    //         headerUlList[2].style.color = 'black';
+    //     }
+    // }
 }
