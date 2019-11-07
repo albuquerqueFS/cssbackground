@@ -2,17 +2,38 @@ const inicioView = document.getElementById('inicio');
 const sobreView = document.getElementById('sobre-flex');
 const contatoView = document.getElementById('foda');
 
+const janela = window.window;
+
 $('#aba-home').click(() => {
-    location.href = "#"
-    location.href = "#inicio"
+    janela.scrollTo({
+        top: $('#inicio').offset().top,
+        left: 0,
+        behavior: 'smooth'
+    })
 })
 
 $('#aba-sobre').click(() => {
-    location.href = "#"
-    location.href = "#sobre-flex"
+    janela.scrollTo({
+        top: $('#sobre-flex').offset().top,
+        left: 0,
+        behavior: 'smooth'
+    })
 })
 
 $('#aba-contato').click(() => {
-    location.href = "#"
-    location.href = "#foda"
+    janela.scrollTo({
+        top: $('#foda').offset().top,
+        left: 0,
+        behavior: 'smooth'
+    })
 })
+
+$('#c-getdown').click(() => {
+    $('#minhas-redes').css('display', 'block');
+
+    janela.scrollTo({
+        top: $('#minhas-redes').offset().top,
+        left: 0,
+        behavior: 'smooth'
+    })
+}) 

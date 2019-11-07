@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Rationale&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url("fonts/helvetica-1-webfont.woff");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -37,6 +42,7 @@ body {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    z-index: 999;
     transition: 0.5s;
 }
 
@@ -71,6 +77,7 @@ body {
 
 #header ul li:hover {
     background: white;
+    color: black !important;
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -80,7 +87,15 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-#inicio-flex {
+.particles-js-canvas-el {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.inicio-flex {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -163,6 +178,34 @@ body {
     margin-left: 1rem;
 }
 
+.softskills-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 2rem;
+}
+
+.softskills-container img {
+    height: 4rem;
+}
+
+.d-column {
+    display: block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.d-column h3 {
+    font-family: 'Montserrat';
+    color: #181818;
+}
+
+.d-column p {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    color: #5c5c5c;
+}
+
 #sobre-projetos {
     width: 100%;
     display: grid;
@@ -216,8 +259,10 @@ body {
 }
 
 #foda {
+    transition: 0.5s;
+    background: white;
     width: 100vw;
-    overflow-x: unset;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -237,6 +282,33 @@ body {
 #contato-containerB {
     width: 100vw;
     margin: 0rem 3rem;
+}
+
+#c-getdown {
+    float: right;
+    margin-top: 10rem;
+    margin-right: 3rem;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#c-getdown a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+}
+
+#c-getdown img {
+    height: 4rem;
+    padding-top: 1rem;
+    background-color: white;
+}
+
+#c-getdown:hover {
+    cursor: pointer;
 }
 
 #contato-titulo {
@@ -274,16 +346,16 @@ body {
     background: rebeccapurple;
 }
 
-
 #separadorA {
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
-    float: right;
+    float: left;
+
 }
 
-#separadorA button {
-    background-color: rgb(0, 79, 153);
+#orcament-see {
+    background-color: rgb(26, 26, 26);
     color: white;
     margin-top: 3rem;
     border-radius: 10px;
@@ -291,6 +363,11 @@ body {
     padding: 2rem 2rem;
     font-family: 'Helvetica';
     font-size: 2rem;
+    transition: 0.5s;
+}
+
+#orcament-see:hover {
+    transform: scale(1.1);
 }
 
 #contato-link a {
@@ -307,35 +384,61 @@ body {
     box-shadow: 5px 5px 0px 0px grey;
 }
 
-#contato-redes {
-    margin: 1rem 1rem;
-    height: 3rem;
+#minhas-redes {
+    display: none;
+    height: 100vh;
+    background: rgb(0, 170, 255);
+    background-image: url("../imgs/mapa50.png");
+    background-size: cover;
 }
 
-#contato-redes li {
-    display: flex;
-    align-items: center;
+#minhas-redes--titulo {
     font-family: 'Montserrat';
     font-weight: 600;
-    margin-top: 1rem;
-    margin-right: 2rem;
+    font-size: 3rem;
+    color: white;
+    padding-top: 10rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 
-#contato-redes li img {
-    height: 2rem;
-    margin-right: 10px;
+#minhas-redes--lista {
+    margin-left: 2rem;
+    list-style: none;
+    display: block;
 }
 
-#contato-redes li a {
+#minhas-redes--lista li {
+    margin: 1.5rem 0rem;
+    display: flex;
+}
+
+#minhas-redes--lista li:hover {
+    text-decoration: underline;
+}
+
+#minhas-redes--lista a {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: 500;
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    padding-right: 10px;
+    background-color: white;
 }
 
-#contato-redes li a:hover {
-    color: rgb(0, 79, 153);
+#minhas-redes--lista img {
+    margin: 0rem 1rem;
+    height: 2rem;
 }
-    
+
+.b-divider {
+    width: 25vw;
+    height: 2px;
+    background-color: black;
+    margin: 2rem 3rem;
+}
+
 @media only screen and (min-width: 480px) {
      
 }

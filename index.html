@@ -14,7 +14,7 @@
 </head>
 
 
-<body id="vantajs">
+<body>
     <div id="inicio">
         <div id="header">
             <h1 id="logo">Henrique Albuquerque</h1>
@@ -26,12 +26,14 @@
             </ul>
         </div>
 
-        <div id="inicio-flex">
+        <div id="particles-js" class="inicio-flex">
             <div id="inicio-texto">
                 <p>BEM VINDO AO MEU PORTFÓLIO</p>
+
+                <div id="particles-js"></div>
             </div>
             <div id="inicio-img">
-                <div id="img-container"><img src="./imgs/HOME.svg" alt=""></div>
+                <!-- <div id="img-container"><img src="./imgs/HOME.svg" alt=""></div> -->
             </div>
 
         </div>
@@ -58,6 +60,29 @@
                     </div>
                 </div>
 
+                <h1 class="sobre__title">Softskills</h1>
+                <div class="softskills-container">
+                    <img src="./imgs/trabalho-em-equipe.svg" alt="">
+                    <div class="d-column">
+                        <h3>Trabalho em equipe</h3>
+                        <p>Gosto de compartilhar conhecimento e ajudar com qualquer tipo de tarefa possível.</p>
+                    </div>
+                </div>
+                <div class="softskills-container">
+                    <img src="./imgs/comunicativo.svg" alt="">
+                    <div class="d-column">
+                        <h3>Comunicação</h3>
+                        <p>Receber e dar feedback é muito importante!</p>
+                    </div>
+                </div>
+                <div class="softskills-container">
+                    <img src="./imgs/lightbulb-regular.svg" alt="">
+                    <div class="d-column">
+                        <h3>Pensamento Crítico</h3>
+                        <p>Mente aberta a novas idéias com a capacidade de formular visões novas fora da caixa.</p>
+                    </div>
+                </div>
+
                 <h1 class="sobre__title">Projetos no Github</h1>
                 <div id="sobre-projetos">
                 </div>
@@ -67,7 +92,6 @@
             </div>
         </div>
         <div id="foda">
-
             <div id="contato">
                 <div id="contato-container">
                     <h1 id="contato-titulo">Eu desenvolvo produtos
@@ -76,26 +100,47 @@
                             personalidade </span>
                         a sua marca.</h1>
                     <div id="separadorA">
-                        <button id="orcament-see">Preciso de um site AAAAA!</button>
+                        <button id="orcament-see">Preciso de um site!</button>
                     </div>
                     <div id="separadorB">
                     </div>
                 </div>
                 <div id="contato-containerB">
-                    <h1 id="contato-titulo">Precisa de um site? hm...</span>
+                    <h1 id="contato-titulo">Precisa de um site?<br><br> Faça um orçamento comigo através do meu
+                        site
+                        comercial: </span>
                     </h1>
-                    <h1 id="contato-tituloB">Faça um orçamento comigo através do meu site comercial: </h1>
-
+                    <br>
                     <h1 id="contato-link"><a
                             href="https://github.com/albuquerqueFS">albuquerqueFS.github.io/henrique-dev</a></h1>
+
+                    <div id="c-getdown">
+                        <a id="c-link">Ou se preferir</a>
+                        <img id="c-arrow" src="./imgs/arrow-down-solid.svg" alt="">
+                    </div>
                 </div>
             </div>
 
         </div>
 
+        <div id="minhas-redes">
+            <h1 id="minhas-redes--titulo">Me contate pelas minhas redes</h1>
+            <div class="b-divider"></div>
+            <ul id="minhas-redes--lista">
+                <li><a href=""><img src="./imgs/linkedin-icon.png" alt="">Henrique Albuquerque</a></li>
+                <li><a href=""><img src="./imgs/instagram-icon.png" alt="">henrique.git</a></li>
+                <li><a href=""><img src="./imgs/github-icon.png" alt="">albuquerqueFS</a></li>
+            </ul>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="./js/ControllerApi.js"></script>
         <script src="./js/HeaderController.js"></script>
         <script src="./js/NavbarClicks.js"></script>
 </body>
 
 </html>
+
+<script>
+    particlesJS.load('particles-js', 'particles.json');
+</script>

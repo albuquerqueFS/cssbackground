@@ -8,20 +8,28 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/produto.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 </head>
 
 <body>
-    <div id="home">
-        <div id="header">
-            <h1 id="logo">Henrique Albuquerque</h1>
+    <div id="header">
+        <ul>
+            <li style="border-end-start-radius: 5px;" class="aba-selected">Home</li>
+            <li>Produto</li>
+            <h1 id="logo"><a href="">Henrique Albuquerque</a></h1>
+            <li>Contato</li>
+            <li style="border-end-end-radius: 5px;">Minha Conta</li>
+        </ul>
+    </div>
 
-            <ul>
-                <li>Home</li>
-                <li class="aba-selected">Produto</li>
-                <li>Sobre</li>
-                <li>Contato</li>
-            </ul>
-        </div>
+    <div id="bem-vindo">
+        <h1>Sites personalizados e dinâmicos, que te ajudam a agregar <br> <span style="color: seagreen;">valor</span>
+            e a sua marca
+        </h1>
+    </div>
+
+    <div id="home">
         <h1 id="titulo-site">Diversos tipos de sites, para todo tipo de negócio.</h1>
         <div id="galeria">
             <button class="seta" onclick="show(-1)">&lt;</button>
@@ -37,17 +45,6 @@
         <button class="this-here">
             Esse aqui!
         </button>
-    </div>
-
-    <div id="about-me">
-        <div id="about-me-container">
-            <div id="about-me__foto">
-
-            </div>
-            <div id="about-me__texto">
-
-            </div>
-        </div>
     </div>
 
     <script src="./js/CarroselColors.js"></script>

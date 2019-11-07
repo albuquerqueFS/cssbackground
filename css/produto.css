@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url("fonts/helvetica-1-webfont.woff");
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url("fonts/brandontext/HVD\ Fonts\ -\ BrandonText-Medium.woff");
+}
 
 * {
     margin: 0;
@@ -15,62 +26,99 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("../imgs/background-produto.png");
 }
 
 #header {
-    height: 8rem;
-    display: flex;
-    justify-content: space-between;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    z-index: 100;
 }
 
-#home {
-    height: 100vh;
-    background:linear-gradient(90deg, rgba(224,193,202,1) 0%, rgba(199,83,97,1) 100%);
-    text-align: center;
+#header ul {
+    margin: 0 auto;
+    list-style: none;
+    margin-right: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header  ul li {
+    background: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    color: #181818;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+#header ul li:hover {
+    background: #181818;
+    color: white;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 #logo {
     height: min-content;
-    padding: 1rem 1rem;
-    margin: 2rem 2rem;
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    margin: 0 0.5rem;
     font-family: 'Rationale';
     background-color: white;
-}
-
-#header ul {
-    list-style: none;
-}
-
-#header  ul li {
-    display: inline-block;
-    font-family: 'Rationale';
-    font-size: 2rem;
-    padding: 0 2rem;
-    line-height: 8rem;
+    transition: 0.5s;
 }
 
 .aba-selected {
     background: white;
+    color: black !important;
     transition: 0.5s ease-in-out;
 }
 
-#header ul li:hover {
-    background: white;
-    transition: 0.5s ease-in-out;
-}
-
-#titulo-site {
+#bem-vindo {
+    width: 100vw;
+    height: 100vh;
     text-align: center;
-    font-family: 'Rationale';
-    font-size: 3rem;
-    margin-top: 2rem;
+}
+
+#bem-vindo h1 {
+    display: inline-block;
+    font-family: 'Brandon Text';
+    font-weight: bold;
+    font-size: 5rem;
+    color: white;
+    padding: 1rem 1rem;
+    margin-top: 10rem;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #181818;
+}
+
+#logo:hover {
+    background: #d3d7ff;
+    cursor: pointer;
+}
+
+#home {
+    height: 100vh;
+    background: #181818;
+    text-align: center;
 }
 
 #galeria {
     width: 100vw;
-    margin-top: 10vh;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #galeria ul {
@@ -82,7 +130,7 @@ body {
 
 #galeria-container {
     width: 52em;
-    height: 28em;
+    height: 100%;
     box-shadow: 3px 3px 2px 0px black;
 }
 
@@ -95,6 +143,7 @@ body {
     margin: auto 0;
     height: min-content;
     font-size: 5rem;
+    color: white;
     background: none;
     border: none;
     border-radius: 10px;
@@ -109,13 +158,13 @@ body {
     font-size: 2rem;
     margin-top: 3rem;
     padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: 5px;
     border: 1px solid white;
-    background: white;
+    background: rgb(199, 199, 199);
     color: black;
     box-shadow: 3px 3px 2px 0px black;
 }
-
+/* 
 .cardprojeto {
     background: white;
     font-family: 'Rationale';
@@ -134,7 +183,7 @@ body {
 .cardprojeto p {
     font-size: 1rem;
     margin-top: 1rem;
-}
+} */
 
 .anim1 {
     animation: animA 0.5s 1;
@@ -191,5 +240,49 @@ body {
 
     70% {
         animation-timing-function: ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+     
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    #inicio-img {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 12px;
+    }
+    
+    #inicio-img {
+        display: block;
+    }
+
+    #inicio-texto p {
+        margin: 23vh 1rem;
+        font-family: 'Helvetica';
+        font-size: 8rem;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 1200 px) {
+    html { 
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    html { 
+        font-size: 16px;
     }
 }

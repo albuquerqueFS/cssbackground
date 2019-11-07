@@ -1,5 +1,6 @@
 let contadorClass = 1;
 let index = 1;
+
 window.show = function (increase) {
 
     let mainContainer = document.getElementById('home');
@@ -12,11 +13,11 @@ window.show = function (increase) {
     }
 
     switch (contadorClass) {
-        case 1: mainContainer.style.background = 'linear-gradient(90deg, rgba(193,200,224,1) 0%, rgba(83,199,141,1) 100%)'
+        case 1: mainContainer.style.background = ''
             break;
-        case 2: mainContainer.style.background = 'linear-gradient(90deg, rgba(170,154,216,1) 0%, rgba(224,193,202,1) 100%)'
+        case 2: mainContainer.style.background = ''
             break;
-        case 3: mainContainer.style.background = 'linear-gradient(90deg, rgba(224,193,202,1) 0%, rgba(199,83,97,1) 100%)'
+        case 3: mainContainer.style.background = ''
             break;
     }
 
@@ -32,5 +33,5 @@ window.show = function (increase) {
     index = Math.min(Math.max(index, 0), liEls.length - 1);
     liEls[index].scrollIntoView({ behavior: 'smooth' });
 
-    window.scrollTo(0, 0)
+    window.scrollTo(mainContainer.offsetLeft, mainContainer.offsetTop)
 }

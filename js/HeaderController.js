@@ -9,9 +9,22 @@ const secondScreen = window.innerHeight + document.getElementById('sobre-flex').
 const contato = document.getElementById('foda');
 const foda = document.getElementById('foda');
 
+const minhasredes = document.getElementById('minhas-redes');
 const contatocontainer = document.getElementById('contato-containerB');
+var clicked = false;
+
+window.onresize = () => {
+    if (clicked) {
+        contato.scrollTo({
+            top: 0,
+            left: contatocontainer.offsetLeft,
+            behavior: 'smooth'
+        })
+    }
+}
 
 window.onscroll = () => {
+
 
     if (window.pageYOffset > 160) {
         header.style.background = 'rgba(0, 0, 0, 0.20)';
@@ -20,7 +33,10 @@ window.onscroll = () => {
         logo.style.fontSize = '1.5rem';
         logo.style.padding = '1rem 1rem';
 
-        headerUlLi.style.fontSize = '1rem';
+        // headerUlLi.style.fontSize = '1rem';
+        headerUlList[0].style.fontSize = '1rem';
+        headerUlList[1].style.fontSize = '1rem';
+        headerUlList[2].style.fontSize = '1rem';
     } else {
         header.style.background = 'none';
         header.style.height = '7rem';
@@ -28,7 +44,10 @@ window.onscroll = () => {
         logo.style.fontSize = '2rem';
         logo.style.padding = '1rem 1rem';
 
-        headerUlLi.style.fontSize = '1.2rem';
+        // headerUlLi.style.fontSize = '1.2rem';
+        headerUlList[0].style.fontSize = '1.2rem';
+        headerUlList[1].style.fontSize = '1.2rem';
+        headerUlList[2].style.fontSize = '1.2rem';
     }
 
     if (window.pageYOffset < firstScreen) {
@@ -51,13 +70,27 @@ window.onscroll = () => {
         contato.style.backgroundColor = 'white';
 
         $('#orcament-see').click(() => {
+            clicked = true;
             // contato.scrollLeft = contatocontainer.offsetLeft
             contato.scrollTo({
                 top: 0,
-                left: 9000,
+                left: contatocontainer.offsetLeft,
                 behavior: 'smooth'
             })
         })
     }
 
+    if ($('#minhas-redes').css('display', 'block')) {
+        if (window.pageYOffset > $('#minhas-redes').offset().top - 20) {
+            header.style.color = 'white';
+            header.style.background = 'none'
+
+            logo.style.color = 'black';
+            headerUlList[2].style.color = 'black';
+        } else {
+            header.style.color = 'black';
+            logo.style.color = 'black'
+            headerUlList[2].style.color = 'black';
+        }
+    }
 }

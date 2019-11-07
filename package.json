@@ -1,7 +1,6 @@
 {
   "name": "cssbackgroundshake",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +16,9 @@
   },
   "homepage": "https://github.com/albuquerqueFS/cssbackgroundshake#readme",
   "dependencies": {
-    "@types/jquery": "^3.3.31"
-  }
+    "@types/jquery": "^3.3.31",
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
 }
