@@ -276,21 +276,76 @@ body {
 
 #contato-container {
     width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0rem 3rem;
 }
 
 #contato-containerB {
     width: 100vw;
     margin: 0rem 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#contato-containerB input {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+
+#mensagem {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+
+#campos {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#campos p {
+    font-family: 'Montserrat';
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+
+#campos button {
+    width: 20rem;
+    background-color: #005FB7;
+    color: white;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    font-family: 'Rationale';
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: 0px;
+    transition: 0.5s;
+}
+
+#campos button:hover {
+    transform: scale(1.05);
+}
+
+#teste {
+    flex: 2;
 }
 
 #c-getdown {
-    float: right;
-    margin-top: 10rem;
-    margin-right: 3rem;
-    border: 0px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 #c-getdown a {
@@ -304,6 +359,7 @@ body {
 #c-getdown img {
     height: 4rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: white;
 }
 
@@ -315,14 +371,12 @@ body {
     font-family: 'Helvetica';
     font-size: 4rem;
     padding: 1rem 1rem;
-    padding-top: 30vh;
 }
 
-#contato-tituloB {
-    font-family: 'Helvetica';
-    font-size: 4rem;
-    margin-top: 3rem;
-    padding: 1rem 1rem;
+#teste {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #contato-link {
@@ -417,16 +471,6 @@ body {
     text-decoration: underline;
 }
 
-#minhas-redes--lista a {
-    font-family: 'Montserrat';
-    font-size: 2.5rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
-    padding-right: 10px;
-    background-color: white;
-}
-
 #minhas-redes--lista img {
     margin: 0rem 1rem;
     height: 2rem;
@@ -474,6 +518,10 @@ body {
 @media only screen and (min-width: 1200 px) {
     html { 
         font-size: 14px;
+    }
+
+    body {
+        background-color: rebeccapurple;
     }
 }
 

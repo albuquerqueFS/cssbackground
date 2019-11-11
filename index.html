@@ -8,11 +8,21 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/inicio.css">
+    <style>
+        #minhas-redes--lista a {
+            font-family: 'Montserrat';
+            font-size: 2.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            padding-right: 10px;
+            background-color: white;
+        }
+    </style>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="./js/jqueryTeste.js"></script>
 </head>
-
 
 <body>
     <div id="inicio">
@@ -102,18 +112,26 @@
                     <div id="separadorA">
                         <button id="orcament-see">Preciso de um site!</button>
                     </div>
-                    <div id="separadorB">
-                    </div>
                 </div>
                 <div id="contato-containerB">
-                    <h1 id="contato-titulo">Precisa de um site?<br><br> Faça um orçamento comigo através do meu
-                        site
-                        comercial: </span>
-                    </h1>
-                    <br>
-                    <h1 id="contato-link"><a
-                            href="https://github.com/albuquerqueFS">albuquerqueFS.github.io/henrique-dev</a></h1>
-
+                    <div id="teste">
+                        <!-- <h1 id="contato-titulo">Precisa de um site?<br><br> Entre em contato comigo pelo meu email:
+                            </span>
+                        </h1>
+                        <br>
+                        <h1 id="contato-link"><a
+                                href="https://github.com/albuquerqueFS">henrique.barreto@bandtec.com.br</a></h1> -->
+                        <h1 id="contato-titulo">Precisa de um site? Me envie um e-mail!</h1>
+                        <div id="campos">
+                            <p>Nome</p> <br>
+                            <input type="text" placeholder="Seu Nome" id="nome">
+                            <p>E-mail</p> <br>
+                            <input type="text" placeholder="Seu email" id="email">
+                            <p>Mensagem</p> <br>
+                            <textarea name="mensagem" id="mensagem" cols="15" rows="5"></textarea>
+                            <button id="enviarEmail">enviar</button>
+                        </div>
+                    </div>
                     <div id="c-getdown">
                         <a id="c-link">Ou se preferir</a>
                         <img id="c-arrow" src="./imgs/arrow-down-solid.svg" alt="">

@@ -26,7 +26,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../imgs/background-produto-b.png");
+    /* background: linear-gradient(45deg, #4a306d 0%, #45306d 100%);  */
+    /* background-image: url("../imgs/background-produto-b.png");  */
+    background-color: #181818;
 }
 
 #header {
@@ -82,22 +84,6 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-#bem-vindo {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-}
-
-#bem-vindo h1 {
-    display: inline-block;
-    font-family: 'Brandon Text';
-    font-weight: bold;
-    font-size: 5rem;
-    color: white;
-    padding: 1rem 1rem;
-    margin-top: 10rem;
-}
-
 #logo a {
     text-decoration: none;
     color: #181818;
@@ -109,9 +95,17 @@ body {
 }
 
 #home {
-    height: 100vh;
-    background: #181818;
+    margin: 0 auto;
+    margin-top: 7rem;
+    height: 90vh;
+    width: 900px;
+    background-color: white;
     text-align: center;
+}
+
+#titulo-site {
+    margin-top: 7rem;
+    font-family: 'Helvetica';
 }
 
 #galeria {
@@ -153,17 +147,6 @@ body {
     cursor: pointer;
 }
 
-.this-here {
-    font-family: 'Rationale';
-    font-size: 2rem;
-    margin-top: 3rem;
-    padding: 0.5rem 2rem;
-    border-radius: 5px;
-    border: 1px solid white;
-    background: rgb(199, 199, 199);
-    color: black;
-    box-shadow: 3px 3px 2px 0px black;
-}
 /* 
 .cardprojeto {
     background: white;
